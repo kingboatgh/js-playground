@@ -6,32 +6,41 @@
   <title>Variables</title>
 </head>
 <body>
+  <h2>Cart Quantity</h2>
+
+  <button onclick="
+  console.log(`Cart Quantity: ${cartQuantity}`);
+  ">Show Quantity</button>
+
+  <button onclick="
+  cartQuantity = cartQuantity + 1;
+  // same as cartQuantity += 1
+  // same as cartQuantity ++
+  console.log(`Cart Quantity: ${cartQuantity}`);
+  ">Add to Cart</button>
+
+
+  <button onclick="
+  cartQuantity = cartQuantity + 2;
+  // same as cartQuantity += 2
+  console.log(`Cart Quantity: ${cartQuantity}`);
+  ">+2</button>
+
+
+  <button onclick="
+  cartQuantity = cartQuantity + 3;
+  // same as cartQuantity += 3
+  console.log(`Cart Quantity: ${cartQuantity}`);
+  ">+3</button>
+
+  <button onclick="
+  cartQuantity = 0;
+  console.log('Cart was reset');
+  console.log(`Cart Quantity: ${cartQuantity}`);
+  ">Reset Cart </button>
+
   <script>
-// variables 1
-let variable1 = 3;
-console.log(variable1);
-
-// calculation
-let calculation = 2 + 2;
-console.log(calculation);
-console.log(calculation + 2);
-
-// result
-let result = calculation + 2;
-console.log(result);
-
-// message
-let message = 'hello'
-console.log(message);
-
-// Reassigning a variable value
-variable1 = 5;
-console.log(variable1);
-
-
-// Reassigning a variable value 2
-variable1 = variable1 + 1;
-console.log(variable1);
+    let cartQuantity = 0;
 
   </script>
   
